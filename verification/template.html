@@ -8,6 +8,11 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
 
+    html,
+    body {
+        background-color: white;
+    }
+
     .manrope-font {
         font-family: 'Manrope', sans-serif;
         font-optical-sizing: auto;
@@ -16,53 +21,76 @@
     }
 </style>
 
-<body>
+<body
+    style="width: 100%; height: 100%; padding-top: 20px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px; background: white; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+    <svg width="170" height="56" viewBox="0 0 170 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_784_1181)">
+            <rect y="1" width="65" height="51" rx="10" fill="#14B8A6" shape-rendering="crispEdges" />
+            <rect x="1" y="2" width="63" height="49" rx="9" stroke="#44403C" stroke-width="2"
+                shape-rendering="crispEdges" />
+            <path
+                d="M15.8437 38H9.07136L17.2052 14.6109H26.7354L34.8343 38H27.643L23.9426 26.4102L22.0925 20.3011H21.6037L19.6837 26.4102L15.8437 38ZM30.1914 33.4967H13.9586V27.7716H30.1914V33.4967ZM46.2198 31.8211H37.3529V25.9564H45.9755C47.0925 25.9564 47.8489 25.7935 48.2445 25.4676C48.6402 25.1185 48.838 24.3738 48.838 23.2335C48.838 22.0698 48.6402 21.3251 48.2445 20.9993C47.8489 20.6735 47.0925 20.5105 45.9755 20.5105H37.3529V14.6109H46.2198C48.0816 14.6109 49.6991 14.96 51.0722 15.6582C52.4453 16.3331 53.5042 17.3222 54.2489 18.6255C55.0169 19.9055 55.4009 21.4415 55.4009 23.2335C55.4009 25.072 55.0169 26.6313 54.2489 27.9113C53.5042 29.1913 52.4453 30.1687 51.0722 30.8436C49.6991 31.4953 48.0816 31.8211 46.2198 31.8211ZM41.7165 38H35.1536V14.6109H41.7165V38Z"
+                fill="white" />
+        </g>
+        <g filter="url(#filter1_d_784_1181)">
+            <rect x="67" y="1" width="103" height="51" rx="10" fill="#F0FDFA" shape-rendering="crispEdges" />
+            <rect x="68" y="2" width="101" height="49" rx="9" stroke="#44403C" stroke-width="2"
+                shape-rendering="crispEdges" />
+            <path
+                d="M83.0703 38H77.8339V14.6109H83.0703V38ZM95.6725 38H79.3001V33.2873H95.6725V38ZM95.1488 28.5745H79.3001V23.8967H95.1488V28.5745ZM95.6725 19.3236H79.3001V14.6109H95.6725V19.3236ZM103.661 38H98.4248V14.6109H103.661V38ZM116.263 38H99.891V33.2873H116.263V38ZM115.74 28.5745H99.891V23.8967H115.74V28.5745ZM116.263 19.3236H99.891V14.6109H116.263V19.3236ZM124.252 38H119.016V14.6109H129.768C131.63 14.6109 133.2 14.8902 134.48 15.4487C135.784 16.0073 136.773 16.8218 137.448 17.8924C138.123 18.9396 138.46 20.2196 138.46 21.7324C138.46 22.9891 138.251 24.0829 137.832 25.0138C137.413 25.9215 136.761 26.6429 135.877 27.1782C135.016 27.6902 133.91 28.016 132.56 28.1556V28.5047C133.561 28.8073 134.352 29.2611 134.934 29.8662C135.516 30.4713 136.028 31.2276 136.47 32.1353L139.438 38H133.328L130.571 32.5891C130.222 31.9142 129.872 31.3673 129.523 30.9484C129.198 30.5062 128.79 30.192 128.302 30.0058C127.836 29.7964 127.184 29.6916 126.347 29.6916H124.252V38ZM124.252 19.3236V25.3629H130.012C131.246 25.3629 132.095 25.1418 132.56 24.6996C133.026 24.2575 133.259 23.4662 133.259 22.3258C133.259 21.2087 133.026 20.4291 132.56 19.9869C132.095 19.5447 131.246 19.3236 130.012 19.3236H124.252ZM150.888 38.3491C148.607 38.3491 146.722 38.0465 145.232 37.4415C143.743 36.8364 142.638 35.9404 141.916 34.7535C141.195 33.5665 140.834 32.112 140.834 30.3898V29.936H145.966V30.2851C145.966 31.1462 146.105 31.8211 146.384 32.3098C146.664 32.7753 147.164 33.1127 147.886 33.3222C148.63 33.5084 149.712 33.6015 151.132 33.6015C152.622 33.6015 153.611 33.4385 154.099 33.1127C154.588 32.7869 154.832 32.2284 154.832 31.4371C154.832 30.9018 154.751 30.4713 154.588 30.1455C154.448 29.8196 154.123 29.552 153.611 29.3425C153.099 29.1098 152.296 28.912 151.202 28.7491L147.083 28.016C145.593 27.76 144.371 27.3411 143.417 26.7593C142.486 26.1542 141.8 25.4095 141.358 24.5251C140.939 23.6175 140.729 22.5585 140.729 21.3484C140.729 20.1382 141.032 18.9978 141.637 17.9273C142.265 16.8567 143.266 15.984 144.639 15.3091C146.035 14.6109 147.839 14.2618 150.05 14.2618C152.284 14.2618 154.088 14.6109 155.461 15.3091C156.857 16.0073 157.881 16.9731 158.533 18.2065C159.184 19.4167 159.51 20.8015 159.51 22.3607V22.64H154.344V22.256C154.344 21.4415 154.216 20.8015 153.96 20.336C153.704 19.8705 153.25 19.5331 152.598 19.3236C151.947 19.1142 151.039 19.0095 149.875 19.0095C148.386 19.0095 147.35 19.184 146.768 19.5331C146.21 19.8589 145.931 20.3942 145.931 21.1389C145.931 21.6276 146.024 22.0233 146.21 22.3258C146.396 22.6051 146.722 22.8262 147.187 22.9891C147.676 23.152 148.374 23.3265 149.282 23.5127L153.436 24.3156C155.065 24.6182 156.357 25.1069 157.311 25.7818C158.288 26.4335 158.987 27.2247 159.406 28.1556C159.824 29.0865 160.034 30.1222 160.034 31.2625C160.034 32.496 159.731 33.6596 159.126 34.7535C158.521 35.824 157.555 36.6967 156.229 37.3716C154.902 38.0233 153.122 38.3491 150.888 38.3491Z"
+                fill="#14B8A6" />
+        </g>
+        <defs>
+            <filter id="filter0_d_784_1181" x="0" y="1" width="65" height="55" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                <feOffset dy="4" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.25098 0 0 0 0 0.235294 0 0 0 1 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1181" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1181" result="shape" />
+            </filter>
+            <filter id="filter1_d_784_1181" x="67" y="1" width="103" height="55" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                <feOffset dy="4" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.266667 0 0 0 0 0.25098 0 0 0 0 0.235294 0 0 0 1 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1181" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1181" result="shape" />
+            </filter>
+        </defs>
+    </svg>
+
     <div
-        style="width: 100%; height: 100%; padding-top: 20px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px; background: white; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        style="align-self: stretch; height: 309px; padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
         <div
-            style="align-self: stretch; height: 103px; padding-top: 25px; padding-bottom: 25px; border-bottom: 2px #F5F5F4 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+            style="color: #57534E; font-size: 24px; font-family: Clash Grotesk; font-weight: 600; word-wrap: break-word; padding-top: 10px; padding-bottom: 10px;">
+            Verify your new APEERS account.</div>
+        <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 500; word-wrap: break-word"
+            class="manrope-font">
+            We’re glad you’re here! To verify your account and continue, use the code below.</div>
+        <div
+            style="align-self: stretch; height: 59px; padding-top: 35px; padding-bottom: 35px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex;">
             <div
-                style="padding-top: 1px; padding-bottom: 1px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; overflow: hidden; border: 1px #E7E5E4 solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
                 <div
-                    style="padding-left: 9px; padding-right: 9px; padding-top: 4px; padding-bottom: 4px; margin-right: 2px; background: #14B8A6; box-shadow: 0px 4px 0px #44403C; border-radius: 10px; border: 2px #44403C solid; justify-content: center; align-items: center; gap: 10px; display: flex">
-                    <div
-                        style="text-align: center; color: white; font-size: 34.91px; font-family: Clash Grotesk; font-weight: 700; word-wrap: break-word">
-                        AP</div>
-                </div>
-                <div
-                    style="padding-left: 9px; padding-right: 9px; padding-top: 4px; padding-bottom: 4px; margin-left: 2px; background: #F0FDFA; box-shadow: 0px 4px 0px #44403C; border-radius: 10px; border: 2px #44403C solid; justify-content: center; align-items: center; gap: 10px; display: flex">
-                    <div
-                        style="text-align: center; color: #14B8A6; font-size: 34.91px; font-family: Clash Grotesk; font-weight: 600; word-wrap: break-word">
-                        EERS</div>
-                </div>
+                    style="color: #57534E; font-size: 40px; font-family: Clash Grotesk; font-weight: 600; word-wrap: break-word">
+                    {{verification_code}}</div>
             </div>
         </div>
-        <div
-            style="align-self: stretch; height: 309px; padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
-            <div
-                style="color: #57534E; font-size: 24px; font-family: Clash Grotesk; font-weight: 600; word-wrap: break-word; padding-top: 10px; padding-bottom: 10px;">
-                Verify your new APEERS account.</div>
-            <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 500; word-wrap: break-word"
-                class="manrope-font">
-                We’re glad you’re here! To verify your account and continue, use the code below.</div>
-            <div
-                style="align-self: stretch; height: 59px; padding-top: 35px; padding-bottom: 35px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex;">
-                <div
-                    style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px; overflow: hidden; border: 1px #E7E5E4 solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                    <div
-                        style="color: #57534E; font-size: 40px; font-family: Clash Grotesk; font-weight: 600; word-wrap: break-word">
-                        {{verification_code}}</div>
-                </div>
-            </div>
-            <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 500; word-wrap: break-word; padding-bottom: 15px;"
-                class="manrope-font">
-                This code will only be valid for a short period of time. If you didn’t request it, you can safely ignore
-                this email. </div>
-            <div style="width: 36px; height: 10px; position: relative"></div>
-            <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 700; word-wrap: break-word"
-                class="manrope-font">
-                Thanks,<br />The APEERS Team</div>
-        </div>
+        <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 500; word-wrap: break-word; padding-bottom: 15px;"
+            class="manrope-font">
+            This code will only be valid for a short period of time. If you didn’t request it, you can safely ignore
+            this email. </div>
+        <div style="width: 36px; height: 10px; position: relative"></div>
+        <div style="align-self: stretch; color: #78716C; font-size: 15px; font-weight: 700; word-wrap: break-word"
+            class="manrope-font">
+            Thanks,<br />The APEERS Team</div>
     </div>
 </body>
 
