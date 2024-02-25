@@ -5,6 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APEERS Email Template</title>
 
@@ -13,6 +15,10 @@
         @import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@600&display=swap');
         @import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@700&display=swap');
 
+        :root {
+            color-scheme: only light;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -20,7 +26,7 @@
 
         body {
             margin: 0;
-            background-color: white;
+            background-color: white !important;
         }
 
         table {
@@ -38,13 +44,13 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: white;
+            background-color: white !important;
             padding-top: 20px;
             padding-bottom: 60px;
         }
 
         .main {
-            background-color: white;
+            background-color: white !important;
             margin: 0 auto;
             width: 100%;
             max-width: 600px;
@@ -56,8 +62,9 @@
         }
 
         .logo {
-            width: 50vw;
-            max-width: 300px;
+            width: 40vw;
+            max-width: 240px;
+            display: inline-block;
         }
 
         .divider {
@@ -69,20 +76,29 @@
 
         .footer {
             width: 100%;
-
-            display: flex;
-            justify-content: space-between;
+            display: block;
+            padding-top: 10px;
         }
 
         .socials {
-            display: flex;
-            align-items: center;
+            width: 50%;
+            float: left;
+            display: block;
+            padding-top: 9px;
+        }
+
+        .socials a {
+            text-decoration: none;
         }
 
         .copyright {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            width: 50%;
+            float: right;
+        }
+
+        .copyright p {
+            float: right;
+            clear: right;
         }
     </style>
 </head>
@@ -90,7 +106,7 @@
 <body>
     <center class="wrapper">
         <table class="main" width="100%">
-            <tr style="width: 100%; display: flex; justify-content: center;">
+            <tr style="width: 100%; text-align: center;">
                 <td>
                     <img src="https://raw.githubusercontent.com/APEERSorg/email-templates/master/assets/logo.png"
                         class="logo" />
@@ -114,7 +130,7 @@
                     <div class="socials">
                         <a href="https://www.tiktok.com/@apeersofficial" target="_blank" style="cursor: pointer;">
                             <img src="https://raw.githubusercontent.com/APEERSorg/email-templates/master/assets/socials/tiktok.png"
-                                style="padding-right: 10px; display: block;" width="25" height="25" />
+                                style="width: 25px; padding-right: 10px;" />
                         </a>
                         <a href="https://www.youtube.com/@APEERS" target="_blank" style="cursor: pointer;">
                             <img src="https://raw.githubusercontent.com/APEERSorg/email-templates/master/assets/socials/youtube.png"
@@ -136,6 +152,7 @@
                     <div class="copyright">
                         <p style="font-size: 14px; font-weight: 400; color: #78716C; padding-bottom: 10px;">(c) 2024
                             APEERS</p>
+                        <br />
                         <p style="font-size: 14px; font-weight: 400; color: #78716C;">EIN: 81-2908499</p>
                     </div>
                 </td>
